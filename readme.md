@@ -14,16 +14,12 @@ npm install -D git-check-stop
 
 ### To check that you have no uncommitted files before deploying
 
-In your git directory, create a script called gitcheck.js:
-```
-const gcs = require('git-check-stop')
-gcs()
-```
+Use the built in CLI in your npm scripts
 
 In package.json, if you have a script deploy, set it up like this:
 ```
 "scripts": {
-  "predeploy": "node gitcheck"
+  "predeploy": "npx git-check-stop"
   "deploy":"run-my-build"
 }
 ```
@@ -33,12 +29,12 @@ npm run deploy
 ```
 Your build will not deploy unless all your files are committed
 
-### To check that you are on the correct brand AND have no uncommitted files
+### To check that you are on the correct branch AND have no uncommitted files
 
 Same as above, but in package.json
 ```
 "scripts": {
-  "predeploy": "node gitcheck master"
+  "predeploy": "npx git-check-stop master"
   "deploy":"run-my-build"
 }
 ```
