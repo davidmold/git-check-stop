@@ -1,0 +1,22 @@
+{
+  "name": "git-check-stop",
+  "version": "1.0.0",
+  "description": "Ensure that you all your files are committed and/or you are on the correct branch before deploying",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "branch",
+    "deploy",
+    "commit"
+  ],
+  "author": "David Mold",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "git-branch": "^2.0.1",
+    "git-status": "^1.0.10"
+  }
+}
