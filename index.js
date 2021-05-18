@@ -28,11 +28,11 @@ async function main() {
         return
       }
       if(data.length > 0) {
-        console.log(chalk.bgRed(' STOP '), chalk.yellow('You have ' + data.length + ' uncommitted changes. Please commit them before deploying'))
+        console.log(chalk.bgRed(' STOP '), chalk.yellow('You have ' + data.length + ' uncommitted changes.'))
         resolve(2)
         return
       }
-      console.log(chalk.bgGreen.black(' OK '), chalk.yellow('git all up to date'))
+      console.log(chalk.bgGreen.black(' OK '), chalk.yellow('git all up to date.'))
       resolve(0)
       return
     })
