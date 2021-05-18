@@ -1,8 +1,9 @@
 {
   "name": "git-check-stop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ensure that you all your files are committed and/or you are on the correct branch before deploying",
-  "main": "index.js",
+  "main": "./index.js",
+  "bin":"./cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

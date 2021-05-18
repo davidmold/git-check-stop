@@ -38,7 +38,7 @@ Your build will not deploy unless all your files are committed
 Same as above, but in package.json
 ```
 "scripts": {
-  "predeploy": "SET GIT_BRANCH=master&& node gitcheck"
+  "predeploy": "node gitcheck master"
   "deploy":"run-my-build"
 }
 ```
