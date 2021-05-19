@@ -1,11 +1,11 @@
 {
   "name": "git-check-stop",
   "version": "1.0.7",
-  "homepage":"https://github.com/davidmold/git-check-stop",
-  "repository":"davidmold/git-check-stop",
+  "homepage": "https://github.com/davidmold/git-check-stop",
+  "repository": "davidmold/git-check-stop",
   "description": "Ensure that you all your files are committed and/or you are on the correct branch before deploying",
   "main": "./index.js",
-  "bin":"./cli.js",
+  "bin": "./cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

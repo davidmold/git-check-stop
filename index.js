@@ -15,7 +15,7 @@ async function main() {
     console.log(chalk.green('git branch:'), chalk.green.inverse(' ' + name + ' '), chalk.green('.'))
   }
   catch(err) {
-    console.log(chalk.bgRed('git error'), err)
+    console.log(chalk.bgRed(' git error '), err)
     return 1
   }
   if(branchname) {
@@ -52,5 +52,8 @@ module.exports = function()
     if(code) {
       process.exit(code)
     }
+  },(err) => {
+    console.log(chalk.bgRed(' git-check-stop error '), err)
+    process.exit(1)
   })
 }
