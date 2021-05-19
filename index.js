@@ -9,8 +9,15 @@ async function main() {
       branchname = process.argv[2]
     }
   }
-  let name = await branch()
-  console.log(chalk.green('git branch:'), chalk.green.inverse(' ' + name + ' '), chalk.green('.'))
+  try {
+    let name = await branch()
+    console.log(chalk.green('git branch:'), chalk.green.inverse(' ' + name + ' '), chalk.green('.'))
+  }
+  catch(err) {
+    console.log(chalk.bgRed('git error'), err)
+    resolve(1)
+    return
+  }
   if(branchname) {
     if(name !== branchname){
       console.log('')
